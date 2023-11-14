@@ -3,6 +3,7 @@
 
 brew install ffmpeg
 brew install yt-dlp
+brew install vim
 brew install gh
 # gh auth login
 # gh extension install github/gh-copilot
