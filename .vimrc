@@ -1,4 +1,4 @@
-"SETTING
+"Vim SETTING
 
 
 "General
@@ -26,6 +26,8 @@ vnoremap <C-c> "+y
 set backspace=indent,eol,start
 set ambiwidth=double
 set shellslash
+set wildoptions=pum
+set mouse=a
 syntax on
 
 
@@ -43,6 +45,7 @@ set smartcase
 set incsearch
 set wrapscan
 set hlsearch
+set shortmess-=S
 
 
 "Status line
