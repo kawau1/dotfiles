@@ -10,7 +10,7 @@ set warp
 set title
 set wildmenu
 set cursorline
-hi CursorLine cterm=NONE ctermbg=darkgrey ctermfg=NONE
+hi CursorLine cterm=NONE ctermbg=lightgrey ctermfg=NONE
 set smartindent
 set visualbell
 set noerrorbells
@@ -49,23 +49,23 @@ set hlsearch
 "ステータスラインの色とモード名の設定
 function! StatuslineMode()
     if mode() == 'n'
-		hi StatusLine ctermfg=white ctermbg=green
+		hi StatusLine ctermfg=green ctermbg=white
 		hi ModeNameHighlight ctermfg=green ctermbg=white cterm=bold
 		return 'NORMAL'
 	elseif mode() == 'i'
-		hi StatusLine ctermfg=white ctermbg=blue
+		hi StatusLine ctermfg=blue ctermbg=white
 		hi ModeNameHighlight ctermfg=blue ctermbg=white cterm=bold
 		return 'INSERT'
 	elseif mode() == 'v' || mode() == 'V' || mode() == "\<C-v>"
-		hi StatusLine ctermfg=white ctermbg=red
+		hi StatusLine ctermfg=red ctermbg=white
 		hi ModeNameHighlight ctermfg=red ctermbg=white cterm=bold
 		return 'VISUAL'
 	elseif mode() == 'c'
-	    hi StatusLine ctermfg=white ctermbg=magenta
+	    hi StatusLine ctermfg=magenta ctermbg=white
 		hi ModeNameHighlight ctermfg=magenta ctermbg=white cterm=bold
 		return 'CMDLINE'
 	else
-		hi StatusLine ctermfg=white ctermbg=yellow
+		hi StatusLine ctermfg=yellow ctermbg=white
 		hi ModeNameHighlight ctermfg=yellow ctermbg=white cterm=bold
 		return 'OTHERS'
 	endif
@@ -113,7 +113,7 @@ set tabline=%!CustomTabLine()
 
 
 "Plugin
-call plug#begin('~/.vimfiles/plugged')
+call plug#begin('~/.vim/plugged')
 " ここにプラグインを追加
 " Plug 'githubのユーザー名/リポジトリ名'
 Plug 'github/copilot.vim'

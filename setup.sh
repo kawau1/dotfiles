@@ -4,9 +4,9 @@
 brew install ffmpeg
 brew install yt-dlp
 brew install gh
-brew install vim
 # gh auth login
 # gh extension install github/gh-copilot
+brew install vim
 brew install --cask visual-studio-code
 brew install --cask notion
 brew install --cask sketch
