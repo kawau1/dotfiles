@@ -2,12 +2,6 @@
 
 ## Tree diagram
 
-Fonts<br>
- ┣─ SF-Pro<br>
- ┣─ SF-Compact<br>
- ┣─ SF-Mono<br>
- ┗─ NY<br>
-
 Homebrew<br>
  ┣─ ffmpeg<br>
  ┣─ yt-dlp<br>
@@ -16,7 +10,16 @@ Homebrew<br>
  ┃&ensp;&ensp;&ensp;┣─ .vimrc<br>
  ┃&ensp;&ensp;&ensp;┗─ vim-plug<br>
  ┃&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;┗─ copilot.vim<br>
- ┣─ monaspace<br>
+ ┃<br>
+ ┣─ (cask)(font) monaspace<br>
+ ┣─ (cask)(font) sf-pro<br>
+ ┣─ (cask)(font) sf-compact<br>
+ ┣─ (cask)(font) sf-mono<br>
+ ┣─ (cask)(font) new-york<br>
+ ┃<br>
+ ┣─ (cask) sf-symbols<br>
+ ┣─ (cask) raspberry-pi-imager<br>
+ ┣─ (cask) docker<br>
  ┣─ (cask) visual-studio-code<br>
  ┣─ (cask) notion<br>
  ┣─ (cask) sketch<br>
