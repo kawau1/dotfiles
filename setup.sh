@@ -29,6 +29,7 @@ brew install --cask homebrew/cask-fonts/font-new-york
 brew install --cask sf-symbols
 brew install --cask raspberry-pi-imager
 brew install --cask docker
+brew install --cask rectangle
 brew install --cask visual-studio-code
 brew install --cask notion
 brew install --cask sketch

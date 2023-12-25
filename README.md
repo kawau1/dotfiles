@@ -20,6 +20,7 @@ Homebrew<br>
  ┣─ (cask) sf-symbols<br>
  ┣─ (cask) raspberry-pi-imager<br>
  ┣─ (cask) docker<br>
+ ┣─ (cask) rectangle<br>
  ┣─ (cask) visual-studio-code<br>
  ┣─ (cask) notion<br>
  ┣─ (cask) sketch<br>
