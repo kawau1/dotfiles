@@ -48,7 +48,7 @@ set hlsearch
 set shortmess-=S
 
 
-"Status line
+"Status Line
 "ステータスラインの色とモード名の設定
 function! StatuslineMode()
     if mode() == 'n'
@@ -78,7 +78,7 @@ endfunction
 set statusline=%#ModeNameHighlight#[%{StatuslineMode()}]%#StatusLine#\ %F%m%r%h%w\ %<%=ENC=%{&fenc!=''?&fenc:&enc}\ FMT=%{&ff}\ TYPE=%Y\ 行%l,列%c
 
 
-"Tab line
+"Tab Line
 function! CustomTabLine()
 	let s = ''
 	for i in range(tabpagenr('$'))
@@ -116,15 +116,15 @@ set tabline=%!CustomTabLine()
 
 
 "Plugin
+"vim-plugをインストール
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
   silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
+
 call plug#begin('~/.vim/plugged')
-" ここにプラグインを追加
-" Plug 'githubのユーザー名/リポジトリ名'
+"ここにプラグインを追加
+"Plug 'githubのユーザー名/リポジトリ名'
 Plug 'github/copilot.vim'
 call plug#end()
-
-
