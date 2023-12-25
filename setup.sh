@@ -45,6 +45,7 @@ brew install yt-dlp
 brew install gh
 # gh auth login
 # gh extension install github/gh-copilot
+# gh textention install kawarimidoll/gh-graph
 brew install vim
 brew tap homebrew/cask-fonts
 brew install font-monaspace
