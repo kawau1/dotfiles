@@ -1,11 +1,5 @@
 #!/bin/sh
 
-# Homebrewのインストール
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-# https://brew.sh/ja/
-
-echo "Homebrew installation has completed!"
-
 # フォントのインストール
 # ダウンロードするDMGファイルのURLリスト
 DMG_URLS=(
@@ -38,6 +32,12 @@ done
 
 echo "All fonts have been installed!"
 
+
+# Homebrewのインストール
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# https://brew.sh/ja/
+
+echo "Homebrew installation has completed!"
 
 # Homebrewでインストールするアプリケーション
 brew install ffmpeg

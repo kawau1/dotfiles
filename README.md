@@ -2,6 +2,12 @@
 
 ## Tree diagram
 
+Fonts<br>
+ ┣─ SF-Pro<br>
+ ┣─ SF-Compact<br>
+ ┣─ SF-Mono<br>
+ ┗─ NY<br>
+
 Homebrew<br>
  ┣─ ffmpeg<br>
  ┣─ yt-dlp<br>
