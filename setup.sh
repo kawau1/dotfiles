@@ -8,6 +8,7 @@ echo "Homebrew installation has completed!"
 
 brew update
 brew upgrade
+brew cleanup
 
 # Homebrewでインストールするアプリケーション
 brew install git
@@ -22,11 +23,11 @@ gh extension upgrade --all
 brew install vim
 
 brew tap homebrew/cask-fonts
-brew install --cask homebrew/cask-fonts/font-monaspace
-brew install --cask homebrew/cask-fonts/font-sf-pro
-brew install --cask homebrew/cask-fonts/font-sf-compact
-brew install --cask homebrew/cask-fonts/font-sf-mono
-brew install --cask homebrew/cask-fonts/font-new-york
+brew install --cask font-monaspace
+brew install --cask font-sf-pro
+brew install --cask font-sf-compact
+brew install --cask font-sf-mono
+brew install --cask font-new-york
 
 brew install --cask sf-symbols
 brew install --cask raspberry-pi-imager
