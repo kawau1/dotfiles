@@ -10,8 +10,10 @@ brew update
 brew upgrade
 
 # Homebrewでインストールするアプリケーション
+brew install git
 brew install ffmpeg
 brew install yt-dlp
+brew install neofetch
 brew install gh
 gh auth login
 gh extension install github/gh-copilot
@@ -28,11 +30,14 @@ brew install --cask homebrew/cask-fonts/font-new-york
 
 brew install --cask sf-symbols
 brew install --cask raspberry-pi-imager
+brew install --cask amorphousdiskmark
 brew install --cask docker
 brew install --cask rectangle
+brew install --cask deepl
 brew install --cask visual-studio-code
 brew install --cask notion
 brew install --cask sketch
+brew install --cask minecraft
 brew install --cask steam
 brew install --cask discord
 
