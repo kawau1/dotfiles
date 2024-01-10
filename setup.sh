@@ -15,6 +15,8 @@ brew install git
 brew install ffmpeg
 brew install yt-dlp
 brew install neofetch
+brew install openjdk
+sudo ln -sfn $(brew --prefix)/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 brew install gh
 gh auth login
 gh extension install github/gh-copilot

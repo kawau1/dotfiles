@@ -7,6 +7,7 @@ Homebrew<br>
  ┣─ (formula) ffmpeg<br>
  ┣─ (formula) yt-dlp<br>
  ┣─ (formula) neofetch<br>
+ ┣─ (formula) openjdk<br>
  ┣─ (formula) gh<br>
  ┃&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;┣─ gh-copilot<br>
  ┃&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;┗─ gh-graph<br>
