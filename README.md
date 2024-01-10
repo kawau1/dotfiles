@@ -22,9 +22,6 @@ Homebrew<br>
  ┣─ (cask)(font) new-york<br>
  ┃<br>
  ┣─ (cask) sf-symbols<br>
- ┣─ (cask) raspberry-pi-imager<br>
- ┣─ (cask) amorphousdiskmark<br>
- ┣─ (cask) docker<br>
  ┣─ (cask) rectangle<br>
  ┣─ (cask) deepl<br>
  ┣─ (cask) visual-studio-code<br>
