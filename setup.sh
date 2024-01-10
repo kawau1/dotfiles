@@ -32,6 +32,7 @@ brew install --cask font-sf-mono
 brew install --cask font-new-york
 
 brew install --cask sf-symbols
+brew install --cask docker
 brew install --cask rectangle
 brew install --cask deepl
 brew install --cask visual-studio-code

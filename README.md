@@ -23,6 +23,7 @@ Homebrew<br>
  ┣─ (cask)(font) new-york<br>
  ┃<br>
  ┣─ (cask) sf-symbols<br>
+ ┣─ (cask) docker<br>
  ┣─ (cask) rectangle<br>
  ┣─ (cask) deepl<br>
  ┣─ (cask) visual-studio-code<br>
