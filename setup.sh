@@ -37,7 +37,6 @@ brew install --cask rectangle
 brew install --cask deepl
 brew install --cask visual-studio-code
 brew install --cask notion
-brew install --cask sketch
 brew install --cask minecraft
 brew install --cask steam
 brew install --cask discord

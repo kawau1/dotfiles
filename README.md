@@ -28,7 +28,6 @@ Homebrew<br>
  ┣─ (cask) deepl<br>
  ┣─ (cask) visual-studio-code<br>
  ┣─ (cask) notion<br>
- ┣─ (cask) sketch<br>
  ┣─ (cask) minecraft<br>
  ┣─ (cask) steam<br>
  ┗─ (cask) discord<br>

@@ -6,7 +6,6 @@ set fenc=utf-8
 set showcmd
 set number
 set ruler
-set warp
 set title
 set wildmenu
 set cursorline
@@ -32,7 +31,6 @@ syntax on
 
 
 "Tab
-set expendtab
 set tabstop=4
 set shiftwidth=4
 set autoindent
