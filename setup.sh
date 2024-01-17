@@ -31,6 +31,7 @@ brew install --cask font-sf-compact
 brew install --cask font-sf-mono
 brew install --cask font-new-york
 
+brew install --cask appcleaner
 brew install --cask sf-symbols
 brew install --cask docker
 brew install --cask rectangle

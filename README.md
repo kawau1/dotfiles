@@ -22,6 +22,7 @@ Homebrew<br>
  ┣─ (cask)(font) sf-mono<br>
  ┣─ (cask)(font) new-york<br>
  ┃<br>
+ ┣─ (cask) appcleaner<br>
  ┣─ (cask) sf-symbols<br>
  ┣─ (cask) docker<br>
  ┣─ (cask) rectangle<br>
