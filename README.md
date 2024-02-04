@@ -25,6 +25,7 @@ Homebrew<br>
  ┣─ (cask) appcleaner<br>
  ┣─ (cask) sf-symbols<br>
  ┣─ (cask) docker<br>
+ ┣─ (cask) wine-stable<br>
  ┣─ (cask) rectangle<br>
  ┣─ (cask) deepl<br>
  ┣─ (cask) visual-studio-code<br>
