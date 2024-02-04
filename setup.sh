@@ -4,11 +4,12 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 # https://brew.sh/ja/
 
-echo "Homebrew installation has completed!"
-
 brew update
 brew upgrade
 brew cleanup
+brew autoremove
+brew tap homebrew/autoupdate
+brew autoupdate start 86400 --upgrade --cleanup --immediate --sudo
 
 # Homebrewでインストールするアプリケーション
 brew install git
