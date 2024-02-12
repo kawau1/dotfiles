@@ -27,6 +27,7 @@ set ambiwidth=double
 set shellslash
 set wildoptions=pum
 set mouse=a
+set clipboard+=unnamed
 syntax on
 
 
@@ -73,7 +74,7 @@ function! StatuslineMode()
 endfunction
 
 "ステータスラインの設定
-set statusline=%#ModeNameHighlight#[%{StatuslineMode()}]%#StatusLine#\ %F%m%r%h%w\ %<%=ENC=%{&fenc!=''?&fenc:&enc}\ FMT=%{&ff}\ TYPE=%Y\ 行%l,列%c
+set statusline=%#ModeNameHighlight#[%{StatuslineMode()}]%#StatusLine#\ %F%m%r%h%w\ %<%=行%l、列%c\ ENC=%{&fenc!=''?&fenc:&enc}\ FMT=%{&ff}\ TYPE=%Y\
 
 
 "Tab Line
