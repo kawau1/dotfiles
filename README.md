@@ -6,14 +6,14 @@ Homebrew<br>
  ┣─ (formula) git<br>
  ┣─ (formula) ffmpeg<br>
  ┣─ (formula) yt-dlp<br>
- ┃&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;┗─ yt-dlp.conf<br>
+ ┃&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;┗─ (setting) yt-dlp.conf<br>
  ┣─ (formula) neofetch<br>
  ┣─ (formula) openjdk<br>
  ┣─ (formula) gh<br>
  ┃&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;┣─ gh-copilot<br>
  ┃&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;┗─ gh-graph<br>
  ┣─ (formula) vim<br>
- ┃&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;┣─ .vimrc<br>
+ ┃&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;┣─ (setting) .vimrc<br>
  ┃&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;┗─ vim-plug<br>
  ┃&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;┗─ copilot.vim<br>
  ┃<br>
