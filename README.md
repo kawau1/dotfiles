@@ -28,6 +28,7 @@ Homebrew<br>
  ┣─ (cask) docker<br>
  ┣─ (cask) wine-stable<br>
  ┣─ (cask) rectangle<br>
+ ┣─ (cask) hhkb<br>
  ┣─ (cask) deepl<br>
  ┣─ (cask) visual-studio-code<br>
  ┣─ (cask) notion<br>

@@ -37,6 +37,7 @@ brew install --cask sf-symbols
 brew install --cask docker
 brew install --cask wine-stable
 brew install --cask rectangle
+brew install --cask hhkb
 brew install --cask deepl
 brew install --cask visual-studio-code
 brew install --cask notion
