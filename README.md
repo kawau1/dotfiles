@@ -16,6 +16,8 @@ Homebrew<br>
  ┃&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;┣─ (setting) .vimrc<br>
  ┃&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;┗─ vim-plug<br>
  ┃&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;┗─ copilot.vim<br>
+ ┣─ (formula) zsh-autocomplete<br>
+ ┣─ (formula) zsh-syntax-highlighting<br>
  ┃<br>
  ┣─ (cask)(font) monaspace<br>
  ┣─ (cask)(font) sf-pro<br>
