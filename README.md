@@ -25,10 +25,10 @@ Homebrew<br>
  ┣─ (cask)(font) sf-mono<br>
  ┣─ (cask)(font) new-york<br>
  ┃<br>
- ┣─ (cask) appcleaner<br>
  ┣─ (cask) sf-symbols<br>
  ┣─ (cask) docker<br>
- ┣─ (cask) wine-stable<br>
+ ┣─ (cask) parallels<br>
+ ┣─ (cask) parallels-toolbox<br>
  ┣─ (cask) rectangle<br>
  ┣─ (cask) hhkb<br>
  ┣─ (cask) deepl<br>

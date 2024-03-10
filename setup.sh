@@ -37,10 +37,10 @@ brew install --cask font-sf-compact
 brew install --cask font-sf-mono
 brew install --cask font-new-york
 
-brew install --cask appcleaner
 brew install --cask sf-symbols
 brew install --cask docker
-brew install --cask wine-stable
+brew install --cask parallels
+brew install --cask parallels-toolbox
 brew install --cask rectangle
 brew install --cask hhkb
 brew install --cask deepl
@@ -49,5 +49,3 @@ brew install --cask notion
 brew install --cask minecraft
 brew install --cask steam
 brew install --cask discord
-
-echo "All installations have completed!"
