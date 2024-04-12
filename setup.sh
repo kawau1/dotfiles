@@ -16,6 +16,9 @@ brew install git
 brew install ffmpeg
 brew install yt-dlp
 brew install neofetch
+brew install wget
+brew install python
+brew install pyenv
 brew install openjdk
 sudo ln -sfn $(brew --prefix)/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 brew install gh

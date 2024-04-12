@@ -8,6 +8,9 @@ Homebrew<br>
  ┣─ (formula) yt-dlp<br>
  ┃&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;┗─ (setting) yt-dlp.conf<br>
  ┣─ (formula) neofetch<br>
+ ┣─ (formula) wget<br>
+ ┣─ (formula) python<br>
+ ┣─ (formula) pyenv<br>
  ┣─ (formula) openjdk<br>
  ┣─ (formula) gh<br>
  ┃&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;┣─ gh-copilot<br>
