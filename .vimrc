@@ -127,3 +127,5 @@ call plug#begin('~/.vim/plugged')
 "Plug 'githubのユーザー名/リポジトリ名'
 Plug 'github/copilot.vim'
 call plug#end()
+
+let g:copilot_filetypes = {'': v:true}
