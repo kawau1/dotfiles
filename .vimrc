@@ -1,7 +1,7 @@
-"Vim SETTING
+" Vim SETTING
 
 
-"General
+" General
 set fenc=utf-8
 set showcmd
 set number
@@ -31,14 +31,14 @@ set clipboard+=unnamed
 syntax on
 
 
-"Tab
+" Tab
 set tabstop=4
 set shiftwidth=4
 set autoindent
 set smarttab
 
 
-"Search
+" Search
 set ignorecase
 set smartcase
 set incsearch
@@ -47,8 +47,8 @@ set hlsearch
 set shortmess-=S
 
 
-"Status Line
-"ステータスラインの色とモード名の設定
+" Status Line
+" ステータスラインの色とモード名の設定
 function! StatuslineMode()
     if mode() == 'n'
 		hi StatusLine ctermfg=green ctermbg=white
@@ -73,21 +73,21 @@ function! StatuslineMode()
 	endif
 endfunction
 
-"ステータスラインの設定
-set statusline=%#ModeNameHighlight#[%{StatuslineMode()}]%#StatusLine#\ %F%m%r%h%w\ %<%=行%l、列%c\ ENC=%{&fenc!=''?&fenc:&enc}\ FMT=%{&ff}\ TYPE=%Y\
+" ステータスラインの設定
+set statusline=%#ModeNameHighlight#[%{StatuslineMode()}]%#StatusLine#\ %F%m%r%h%w\ %<%=行%l、列%c\ \ %{&fenc!=''?&fenc:&enc}\ \ %{&ff}\ \ %Y\
 
 
-"Tab Line
+" Tab Line
 function! CustomTabLine()
 	let s = ''
 	for i in range(tabpagenr('$'))
-		"タブ番号を取得
+		" タブ番号を取得
 		let tabnr = i + 1
-		"タブの選択状態に応じて色を変更
+		" タブの選択状態に応じて色を変更
 		let s .= '%#TabLine#'
-		"現在のタブが選択されているかどうかを確認
+		" 現在のタブが選択されているかどうかを確認
 		let s .= (tabnr == tabpagenr() ? '%#TabLineSel#' : '%#TabLine#')
-		"タブに含まれるバッファの状態を確認し、変更されていれば●を表示
+		" タブに含まれるバッファの状態を確認し、変更されていれば●を表示
 		let buflist = tabpagebuflist(tabnr)
 		let winnr = tabpagewinnr(tabnr)
 		let bufnr = buflist[winnr - 1]
@@ -95,27 +95,27 @@ function! CustomTabLine()
 		if bufmodified
 	    	let s .= ' ●'
 		endif
-		"バッファ名の取得と表示
+		" バッファ名の取得と表示
 		let bufname = bufname(bufnr)
 		if bufname != ''
 			let s .= ' ' .  bufname . ' '
 		else
 			let s .= '[No Name] '
 		endif
-		"選択されているタブの終わりを表す
+		" 選択されているタブの終わりを表す
 		let s .= '%T'
 	endfor
-	"タブラインの右側に表示される空白
+	" タブラインの右側に表示される空白
 	let s .= '%#TabLineFill#%T'
 	return s
 endfunction
 
-"カスタムのタブライン関数をセット
+" カスタムのタブライン関数をセット
 set tabline=%!CustomTabLine()
 
 
-"Plugin
-"vim-plugをインストール
+" Plugin
+" vim-plugをインストール
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
   silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
@@ -123,8 +123,8 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
-"ここにプラグインを追加
-"Plug 'githubのユーザー名/リポジトリ名'
+" ここにプラグインを追加
+" Plug 'githubのユーザー名/リポジトリ名'
 Plug 'github/copilot.vim'
 call plug#end()
 
