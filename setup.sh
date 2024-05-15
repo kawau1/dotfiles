@@ -41,6 +41,7 @@ brew install --cask font-sf-mono
 brew install --cask font-new-york
 
 brew install --cask sf-symbols
+brew install --cask chatgpt
 brew install --cask docker
 brew install --cask parallels
 brew install --cask parallels-toolbox

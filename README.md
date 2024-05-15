@@ -29,6 +29,7 @@ Homebrew<br>
  ┣─ (cask)(font) new-york<br>
  ┃<br>
  ┣─ (cask) sf-symbols<br>
+ ┣─ (cask) chatgpt<br>
  ┣─ (cask) docker<br>
  ┣─ (cask) parallels<br>
  ┣─ (cask) parallels-toolbox<br>
