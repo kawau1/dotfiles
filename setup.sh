@@ -1,8 +1,9 @@
 #!/bin/sh
 
 # Homebrewのインストール
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 # https://brew.sh/ja/
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 
 brew update
 brew upgrade
@@ -25,6 +26,7 @@ brew install gh
 gh auth login
 gh extension install github/gh-copilot
 gh extention install kawarimidoll/gh-graph
+gh extension install roistaff/gh-info
 gh extension upgrade --all
 brew install vim
 brew install zsh-autocomplete
@@ -45,11 +47,11 @@ brew install --cask chatgpt
 brew install --cask docker
 brew install --cask parallels
 brew install --cask parallels-toolbox
-brew install --cask rectangle
 brew install --cask hhkb
 brew install --cask deepl
 brew install --cask visual-studio-code
 brew install --cask notion
-brew install --cask minecraft
 brew install --cask steam
+brew install --cask minecraft
+brew install --cask nvidia-geforce-now
 brew install --cask discord
