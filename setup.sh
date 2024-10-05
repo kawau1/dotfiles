@@ -41,6 +41,8 @@ brew install --cask font-sf-pro
 brew install --cask font-sf-compact
 brew install --cask font-sf-mono
 brew install --cask font-new-york
+brew install --cask font-noto-sans-jp
+brew install --cask font-noto-serif-jp
 
 brew install --cask sf-symbols
 brew install --cask chatgpt

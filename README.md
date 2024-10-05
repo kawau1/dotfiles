@@ -28,6 +28,8 @@ Homebrew<br>
  ┣━ (cask)(font) sf-compact<br>
  ┣━ (cask)(font) sf-mono<br>
  ┣━ (cask)(font) new-york<br>
+ ┣━ (cask)(font) noto-sans-jp<br>
+ ┣━ (cask)(font) noto-serif-jp<br>
  ┃<br>
  ┣━ (cask) sf-symbols<br>
  ┣━ (cask) chatgpt<br>
