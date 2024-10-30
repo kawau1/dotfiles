@@ -46,11 +46,13 @@ brew install --cask font-noto-serif-jp
 
 brew install --cask sf-symbols
 brew install --cask chatgpt
+brew install --cask github-copilot-for-xcode
 brew install --cask docker
 brew install --cask parallels
 brew install --cask parallels-toolbox
 brew install --cask hhkb
 brew install --cask deepl
+brew install --cask microsoft-edge
 brew install --cask visual-studio-code
 brew install --cask notion
 brew install --cask steam

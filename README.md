@@ -33,11 +33,13 @@ Homebrew<br>
  ┃<br>
  ┣━ (cask) sf-symbols<br>
  ┣━ (cask) chatgpt<br>
+ ┣━ (cask) github-copilot-for-xcode<br>
  ┣━ (cask) docker<br>
  ┣━ (cask) parallels<br>
  ┣━ (cask) parallels-toolbox<br>
  ┣━ (cask) hhkb<br>
  ┣━ (cask) deepl<br>
+ ┣━ (cask) microsoft-edge<br>
  ┣━ (cask) visual-studio-code<br>
  ┣━ (cask) notion<br>
  ┣━ (cask) steam<br>
