@@ -1,4 +1,4 @@
-" Vim SETTING
+" VIM SETTINGS
 
 
 " General
@@ -118,7 +118,7 @@ set tabline=%!CustomTabLine()
 " vim-plugをインストール
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
-  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+	silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
@@ -126,6 +126,14 @@ call plug#begin('~/.vim/plugged')
 " ここにプラグインを追加
 " Plug 'githubのユーザー名/リポジトリ名'
 Plug 'github/copilot.vim'
+Plug 'prettier/vim-prettier', {
+	\ 'do': 'yarn install --frozen-lockfile --production',
+	\ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
 call plug#end()
 
+
+" Plugin Settings
 let g:copilot_filetypes = {'': v:true}
+
+let g:prettier#quickfix_enabled = 0
+autocmd TextChanged,InsertLeave *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.svelte,*.yaml,*.html PrettierAsync

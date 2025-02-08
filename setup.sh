@@ -28,6 +28,7 @@ gh extension install github/gh-copilot
 gh extention install kawarimidoll/gh-graph
 gh extension install roistaff/gh-info
 gh extension upgrade --all
+brew install prettier
 brew install vim
 brew install zsh-autocomplete
 brew install zsh-syntax-highlighting
