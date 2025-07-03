@@ -8,15 +8,14 @@ Homebrew
 ├─ (formula) ffmpeg
 ├─ (formula) yt-dlp
 │  └─ (setting) yt-dlp.conf
+├─ (formula) codex
+├─ (formula) gemini-cli
 ├─ (formula) neofetch
 ├─ (formula) wget
 ├─ (formula) python
 ├─ (formula) pyenv
-├─ (formula) openjdk
 ├─ (formula) gh
-│  ├─ (extension) gh-copilot
-│  ├─ (extension) gh-graph
-│  └─ (extension) gh-info
+│  └─ (extension) gh-copilot
 ├─ (formula) prettier
 ├─ (formula) vim
 │  └─ (setting) .vimrc
@@ -50,3 +49,7 @@ Homebrew
 ├─ (cask) nvidia-geforce-now
 └─ (cask) discord
 ```
+
+## Links
+
+<https://brew.sh/ja/>

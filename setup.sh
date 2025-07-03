@@ -1,9 +1,7 @@
 #!/bin/sh
 
 # Homebrewのインストール
-# https://brew.sh/ja/
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
 
 brew update
 brew upgrade
@@ -16,17 +14,15 @@ brew autoupdate start 86400 --upgrade --cleanup --immediate --sudo
 brew install git
 brew install ffmpeg
 brew install yt-dlp
+brew install codex
+brew install gemini-cli
 brew install neofetch
 brew install wget
 brew install python
 brew install pyenv
-brew install openjdk
-sudo ln -sfn $(brew --prefix)/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 brew install gh
 gh auth login
 gh extension install github/gh-copilot
-gh extention install kawarimidoll/gh-graph
-gh extension install roistaff/gh-info
 gh extension upgrade --all
 brew install prettier
 brew install vim
