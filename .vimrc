@@ -31,6 +31,9 @@ vnoremap <C-x> "+d
 vnoremap <C-v> "+p
 vnoremap <C-z> u
 vnoremap <C-y> <C-r>
+inoremap <C-v> "+p
+inoremap <C-z> u
+inoremap <C-y> <C-r>
 set backspace=indent,eol,start
 set ambiwidth=double
 set shellslash
