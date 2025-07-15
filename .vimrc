@@ -10,7 +10,8 @@ set title
 set wildmenu
 set cursorline
 hi CursorLine cterm=NONE ctermbg=lightgrey ctermfg=NONE
-set smartindent
+set autoindent
+set cindent
 set visualbell
 set noerrorbells
 set showmatch
@@ -21,14 +22,23 @@ nnoremap j gj
 nnoremap k gk
 nnoremap <Esc><Esc> :nohsearch<CR><ESC>
 nnoremap <C-c> "+y
+nnoremap <C-s> :w<CR>
+nnoremap <C-q> :q<CR>
+nnoremap <C-z> u
+nnoremap <C-y> <C-r>
 vnoremap <C-c> "+y
+vnoremap <C-x> "+d
+vnoremap <C-v> "+p
+vnoremap <C-z> u
+vnoremap <C-y> <C-r>
 set backspace=indent,eol,start
 set ambiwidth=double
 set shellslash
 set wildoptions=pum
 set mouse=a
-set clipboard+=unnamed
+set clipboard+=unnamedplus
 syntax on
+set spell spelllang=en_us,cjk
 
 
 " Tab
