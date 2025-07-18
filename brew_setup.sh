@@ -28,9 +28,6 @@ brew install prettier
 brew install vim
 brew install zsh-autocomplete
 brew install zsh-syntax-highlighting
-# source $(brew --prefix)/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-# source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# .zshrcに追記する
 
 brew tap homebrew/cask-fonts
 brew install --cask font-monaspace
