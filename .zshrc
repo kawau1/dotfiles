@@ -8,7 +8,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -30,6 +31,10 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 
 # Uncomment the following line to change how often to auto-update (in days).
 # zstyle ':omz:update' frequency 13
+
+autoload -Uz compinit
+compinit
+zstyle ":completion:*:commands" rehash 1
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -73,11 +78,10 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # zsh-autocomplete
 source $(brew --prefix)/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-
 # zsh-syntax-highlighting
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-plugins=(git aliases brew command-not-found copyfile copypath history docker docker-compose gh github macos pip python npm vscode xcode)
+plugins=(git aliases brew command-not-found copyfile copypath history docker docker-compose gh github macos pip python npm vscode xcode web-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -109,12 +113,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="cd ~/.oh-my-zsh"
+source ~/.oh-my-zsh/custom/aliases.zsh
 
 
 # The following lines have been added by Docker Desktop to enable Docker CLI completions.
 fpath=(~/.docker/completions $fpath)
-autoload -Uz compinit
-compinit
 # End of Docker CLI completions
 
 # 一時作業用コマンド https://qiita.com/kawaz/items/2b6ef25f63a4f5300e84

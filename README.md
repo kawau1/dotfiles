@@ -3,11 +3,11 @@
 ## Tree Diagram
 
 ```
-.
+dotfiles/
 ├─ .vimrc
 ├─ .zshrc
-│  └─ aliases.zsh
-├─ .vimrc
+│  └─ aliases.zsh (~/.oh-my-zsh/custom)
+├─ .p10k.zsh
 ├─ yt-dlp.conf
 ├─ brew_setup.sh
 └─ install.sh

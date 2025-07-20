@@ -26,6 +26,7 @@ gh extension install github/gh-copilot
 gh extension upgrade --all
 brew install prettier
 brew install vim
+brew install powerlevel10k
 brew install zsh-autocomplete
 brew install zsh-syntax-highlighting
 

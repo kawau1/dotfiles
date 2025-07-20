@@ -21,6 +21,7 @@ set wildmode=list:longest
 nnoremap j gj
 nnoremap k gk
 nnoremap <Esc><Esc> :nohsearch<CR><ESC>
+nnoremap <C-a> ggVG
 nnoremap <C-c> "+y
 nnoremap <C-s> :w<CR>
 nnoremap <C-q> :q<CR>
@@ -31,6 +32,7 @@ vnoremap <C-x> "+d
 vnoremap <C-v> "+p
 vnoremap <C-z> u
 vnoremap <C-y> <C-r>
+inoremap <C-a> ggVG
 inoremap <C-v> "+p
 inoremap <C-z> u
 inoremap <C-y> <C-r>
