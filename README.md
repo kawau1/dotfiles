@@ -55,5 +55,5 @@ dotfiles/
 
 ## Links
 
-<https://brew.sh/ja/>
+<https://brew.sh/ja/><br>
 <https://ohmyz.sh>
