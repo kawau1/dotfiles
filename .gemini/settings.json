@@ -1,0 +1,18 @@
+{
+    "theme": "Default",
+    "selectedAuthType": "oauth-personal",
+    "mcpServers": {
+        "Context7": {
+            "command": "npx",
+            "args": ["-y", "@upstash/context7-mcp@latest"]
+        }
+    },
+    "hideFooter": false,
+    "showLineNumbers": true,
+    "showMemoryUsage": true,
+    "ideMode": true,
+    "checkpointing": {
+        "enabled": true
+    },
+    "autoAccept": true
+}
