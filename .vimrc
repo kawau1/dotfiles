@@ -43,7 +43,6 @@ set wildoptions=pum
 set mouse=a
 set clipboard+=unnamedplus
 syntax on
-set spell spelllang=en_us,cjk
 
 
 " Tab
