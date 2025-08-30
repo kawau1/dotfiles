@@ -4,6 +4,8 @@
 
 ```
 dotfiles/
+├─ .gemini/
+│  └─ settings.json
 ├─ .vimrc
 ├─ .zshrc
 │  └─ aliases.zsh (~/.oh-my-zsh/custom)
