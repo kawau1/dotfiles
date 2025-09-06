@@ -1,5 +1,13 @@
 #!/bin/sh
 
+# Xcode Command Line Toolsのインストール
+xcode-select --install
+
+# インストールが完了するまで待機
+until xcode-select -p &>/dev/null; do
+    sleep 5
+done
+
 # Homebrewのインストール
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
