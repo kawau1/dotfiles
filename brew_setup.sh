@@ -16,8 +16,6 @@ brew install neofetch
 brew install python
 brew install gh
 gh auth login
-gh extension install github/gh-copilot
-gh extension upgrade --all
 brew install prettier
 brew install vim
 brew install powerlevel10k
