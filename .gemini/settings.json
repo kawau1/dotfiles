@@ -1,39 +1,54 @@
 {
-    "theme": "Default",
-    "selectedAuthType": "oauth-personal",
-    "hideFooter": false,
-    "showLineNumbers": true,
-    "showMemoryUsage": true,
-    "ideMode": true,
-    "checkpointing": {
-        "enabled": true
+    "context": {
+        "fileName": "AGENTS.md"
     },
-    "autoAccept": true,
     "mcpServers": {
         "Context7": {
             "command": "npx",
             "args": ["-y", "@upstash/context7-mcp@latest"]
         }
     },
-    "excludeTools": [
-        "ReadFileTool(./.env)",
-        "ReadFileTool(./.env.*)",
-        "ReadFileTool(./secrets/**)",
-        "ReadFileTool(./config/credentials.json)",
-        "ReadFileTool(./build)",
-        "ReadFileTool(.ssh)",
-        "ReadFileTool(id_rsa)",
-        "ReadFileTool(id_ed25519)",
-        "ReadFileTool(**/*token*)",
-        "ReadFileTool(**/*key*)",
-        "ShellTool(sudo *)",
-        "ShellTool(rm *)",
-        "ShellTool(rm -rf *)",
-        "ShellTool(git push *)",
-        "ShellTool(git commit *)",
-        "ShellTool(git reset *)",
-        "ShellTool(git rebase *)",
-        "WriteFileTool(.env*)",
-        "WriteFileTool(**/secrets/**)"
-    ]
+    "tools": {
+        "autoAccept": true,
+        "exclude": [
+            "ReadFileTool(./.env)",
+            "ReadFileTool(./.env.*)",
+            "ReadFileTool(./secrets/**)",
+            "ReadFileTool(./config/credentials.json)",
+            "ReadFileTool(./build)",
+            "ReadFileTool(.ssh)",
+            "ReadFileTool(id_rsa)",
+            "ReadFileTool(id_ed25519)",
+            "ReadFileTool(**/*token*)",
+            "ReadFileTool(**/*key*)",
+            "ShellTool(sudo *)",
+            "ShellTool(rm *)",
+            "ShellTool(rm -rf *)",
+            "ShellTool(git push *)",
+            "ShellTool(git commit *)",
+            "ShellTool(git reset *)",
+            "ShellTool(git rebase *)",
+            "WriteFileTool(.env*)",
+            "WriteFileTool(**/secrets/**)"
+        ]
+    },
+    "general": {
+        "checkpointing": {
+            "enabled": true
+        }
+    },
+    "ui": {
+        "hideFooter": false,
+        "showMemoryUsage": true,
+        "showLineNumbers": true,
+        "theme": "Default"
+    },
+    "ide": {
+        "enabled": true
+    },
+    "security": {
+        "auth": {
+            "selectedType": "oauth-personal"
+        }
+    }
 }
