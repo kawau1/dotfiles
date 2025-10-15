@@ -19,3 +19,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 # シンボリックリンクを貼るスクリプトを実行
 sh ./link.sh
+
+# カーソルのスピードを変更
+defaults write -g com.apple.mouse.scaling 10
+# defaults read -g com.apple.mouse.scaling で確認
+# 再起動で有効化
