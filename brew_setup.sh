@@ -10,6 +10,8 @@ brew autoupdate start 86400 --upgrade --cleanup --immediate --sudo
 brew install git
 brew install ffmpeg
 brew install yt-dlp
+brew install ollama
+brew services start ollama
 brew install codex
 brew install gemini-cli
 brew install neofetch
@@ -32,6 +34,7 @@ brew install --cask font-sf-mono
 brew install --cask font-new-york
 brew install --cask font-noto-sans-jp
 
+brew install --cask iterm2
 brew install --cask sf-symbols
 brew install --cask chatgpt
 brew install --cask github-copilot-for-xcode
