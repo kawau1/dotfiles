@@ -10,6 +10,7 @@ brew autoupdate start 86400 --upgrade --cleanup --immediate --sudo
 brew install git
 brew install ffmpeg
 brew install yt-dlp
+brew install imagemagick
 brew install ollama
 brew services start ollama
 brew install codex
@@ -44,6 +45,7 @@ brew install --cask parallels-toolbox
 brew install --cask hhkb
 brew install --cask deepl
 brew install --cask microsoft-edge
+brew install --cask microsoft-office
 brew install --cask visual-studio-code
 brew install --cask notion
 brew install --cask obsidian
