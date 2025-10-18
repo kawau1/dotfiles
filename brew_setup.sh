@@ -18,7 +18,7 @@ brew install gemini-cli
 brew install neofetch
 brew install python
 brew install gh
-gh auth login
+# gh auth login
 brew install prettier
 brew install vim
 brew install powerlevel10k

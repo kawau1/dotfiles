@@ -4,15 +4,21 @@
 
 ```
 dotfiles/
-├─ .gemini/
-│  └─ settings.json
+├─ .zsh/
+│  ├─ .p10k.zsh
+│  ├─ .zshrc
+│  └─ aliases.zsh (~/.oh-my-zsh/custom/)
+├─ coding agent/
+│  ├─ AGENTS.md
+│  ├─ config.toml (~/.codex/)
+│  └─ settings.json (~/.gemini/)
 ├─ .vimrc
-├─ .zshrc
-│  └─ aliases.zsh (~/.oh-my-zsh/custom)
-├─ .p10k.zsh
-├─ yt-dlp.conf
 ├─ brew_setup.sh
-└─ install.sh
+├─ install.sh
+├─ link.sh
+└─ yt-dlp.conf (~/.config/yt-dlp/)
+
+
 ```
 
 ## Installetion
@@ -57,5 +63,6 @@ dotfiles/
 
 ## Links
 
-<https://brew.sh/ja/><br>
+<https://brew.sh/ja/>
+
 <https://ohmyz.sh>
