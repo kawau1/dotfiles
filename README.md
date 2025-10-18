@@ -17,8 +17,6 @@ dotfiles/
 ├─ install.sh
 ├─ link.sh
 └─ yt-dlp.conf (~/.config/yt-dlp/)
-
-
 ```
 
 ## Installetion
