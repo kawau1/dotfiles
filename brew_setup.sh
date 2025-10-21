@@ -12,7 +12,8 @@ brew install ffmpeg
 brew install yt-dlp
 brew install imagemagick
 brew install ollama
-brew services start ollama
+# ollama serve でサーバー起動
+# brew services start ollama でログイン時起動
 brew install codex
 brew install gemini-cli
 brew install neofetch
