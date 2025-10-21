@@ -39,6 +39,7 @@ brew install --cask font-noto-sans-jp
 brew install --cask iterm2
 brew install --cask sf-symbols
 brew install --cask chatgpt
+brew install --cask chatgpt-atlas
 brew install --cask github-copilot-for-xcode
 brew install --cask docker
 brew install --cask parallels
