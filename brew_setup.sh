@@ -46,8 +46,8 @@ brew install --cask parallels
 brew install --cask parallels-toolbox
 brew install --cask hhkb
 brew install --cask deepl
-brew install --cask microsoft-edge
-brew install --cask microsoft-office
+# brew install --cask microsoft-edge
+# brew install --cask microsoft-office
 brew install --cask visual-studio-code
 brew install --cask notion
 brew install --cask obsidian
