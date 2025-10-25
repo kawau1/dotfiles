@@ -18,3 +18,6 @@ sh ./link.sh
 defaults write -g com.apple.mouse.scaling 8
 # defaults read -g com.apple.mouse.scaling で確認
 # 再起動で有効化
+# 隠しファイルを常に表示
+defaults write com.apple.finder AppleShowAllFiles -bool true
+killall Finder
