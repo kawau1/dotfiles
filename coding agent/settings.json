@@ -2,7 +2,12 @@
     "context": {
         "fileName": "AGENTS.md"
     },
-    "mcpServers": {},
+    "mcpServers": {
+        "context7": {
+            "command": "npx",
+            "args": ["-y", "@upstash/context7-mcp"]
+        }
+    },
     "tools": {
         "autoAccept": true,
         "exclude": [
