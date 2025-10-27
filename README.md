@@ -1,6 +1,6 @@
 # dotfiles
 
-## Tree Diagram
+## 概要
 
 ```
 dotfiles/
@@ -19,15 +19,15 @@ dotfiles/
 └─ yt-dlp.conf (~/.config/yt-dlp/)
 ```
 
-## Installetion
+## インストール手順
 
-1. Clone this repository:
+1. リポジトリをクローンする:
 
    ```bash
    git clone https://github.com/kawau1/dotfiles.git
    ```
 
-2. Run the installation script:
+2. インストールスクリプトを実行する:
 
    ```bash
    cd ./dotfiles
@@ -35,7 +35,10 @@ dotfiles/
    sh ./install.sh
    ```
 
-## Links
+## メモ
+* 設定ファイルをWindowsで使用する場合、改行コードをCRLFに変換すること
+
+## リンク
 
 * <https://brew.sh/ja/>
 * <https://ohmyz.sh>
