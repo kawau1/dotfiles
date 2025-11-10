@@ -3,4 +3,7 @@ model_reasoning_effort = "high"
 
 [mcp_servers.context7]
 command = "npx"
-args = ["-y", "@upstash/context7-mcp"]
+args = [ "-y", "@upstash/context7-mcp" ]
+
+[tui]
+notifications = [ "agent-turn-complete", "approval-requested" ]
