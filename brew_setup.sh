@@ -54,3 +54,5 @@ brew install --cask steam
 brew install --cask minecraft
 brew install --cask nvidia-geforce-now
 brew install --cask discord
+brew install --cask cmd-eikana
+brew install --cask logi-options+
