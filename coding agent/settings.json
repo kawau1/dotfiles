@@ -1,13 +1,9 @@
 {
     "context": {
-        "fileName": "AGENTS.md"
+        "fileName": "AGENTS.md",
+        "loadMemoryFromIncludeDirectories": true
     },
-    "mcpServers": {
-        "context7": {
-            "command": "npx",
-            "args": ["-y", "@upstash/context7-mcp"]
-        }
-    },
+    "mcpServers": {},
     "tools": {
         "autoAccept": true,
         "exclude": [
@@ -30,18 +26,31 @@
             "ShellTool(git rebase *)",
             "WriteFileTool(.env*)",
             "WriteFileTool(**/secrets/**)"
-        ]
+        ],
+        "shell": {
+            "showColor": true
+        },
+        "enableMessageBusIntegration": true
     },
     "general": {
         "checkpointing": {
             "enabled": true
-        }
+        },
+        "previewFeatures": true,
+        "enablePromptCompletion": true
     },
     "ui": {
         "hideFooter": false,
         "showMemoryUsage": true,
         "showLineNumbers": true,
-        "theme": "Default"
+        "theme": "Default",
+        "showStatusInTitle": true,
+        "footer": {
+            "hideContextPercentage": false
+        },
+        "showCitations": true,
+        "showModelInfoInChat": true,
+        "useAlternateBuffer": true
     },
     "ide": {
         "enabled": true
@@ -50,5 +59,8 @@
         "auth": {
             "selectedType": "oauth-personal"
         }
+    },
+    "output": {
+        "format": "text"
     }
 }
