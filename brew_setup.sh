@@ -11,10 +11,18 @@ brew install git
 brew install ffmpeg
 brew install yt-dlp
 brew install imagemagick
+brew install bat
+brew install fzf
+brew install keifu
+brew install mactop
+brew install tree
+brew install tmux
+brew install uv
 brew install ollama
 brew services start ollama
 brew install codex
 brew install gemini-cli
+brew install claude-code
 brew install neofetch
 brew install python
 brew install gh
@@ -39,7 +47,7 @@ brew install --cask iterm2
 brew install --cask sf-symbols
 brew install --cask chatgpt
 brew install --cask chatgpt-atlas
-brew install --cask github-copilot-for-xcode
+brew install --cask codex-app
 brew install --cask docker
 brew install --cask parallels
 brew install --cask parallels-toolbox
