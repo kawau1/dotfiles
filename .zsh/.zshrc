@@ -7,6 +7,8 @@ fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+# Homebrew を最優先にする
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -40,7 +42,7 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 # zstyle ':omz:update' frequency 13
 
 autoload -Uz compinit
-compinit
+# compinit
 autoload -Uz colors
 colors
 
@@ -51,7 +53,6 @@ SAVEHIST=1000000
 
 zstyle ":completion:*:commands" rehash 1
 zstyle ':completion:*:default' menu select=1
-zstyle ':completion:*' list-colors ''
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
 setopt auto_cd
@@ -68,6 +69,7 @@ setopt share_history
 setopt multios
 setopt transient_rprompt
 setopt cdable_vars
+setopt magic_equal_subst
 
 bindkey -v
 
@@ -116,7 +118,7 @@ source $(brew --prefix)/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 # zsh-syntax-highlighting
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-plugins=(git aliases brew command-not-found copyfile copypath history docker docker-compose gh github macos pip python npm vscode xcode web-search)
+plugins=(aliases brew command-not-found copyfile copypath dirhistory docker docker-compose frontend-search gh git github history iterm2 macos npm pip python vscode web-search xcode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -175,3 +177,19 @@ tmpenv() {
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+showopt() {
+  set -o | sed -e 's/^no\(.*\)on$/\1  off/' -e 's/^no\(.*\)off$/\1  on/'
+}
+
+mkcd() {
+  mkdir -pv "$1" && cd "$1"
+}
+
+ffprobe-yt() {
+	ffprobe -v quiet -show_format -print_format json "$1"
+}
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_OPTS="--reverse --border --style=full --multi --preview 'fzf-preview.sh {}' --bind 'enter:execute-silent(printf '%s' {} | pbcopy)+accept'"
+export FZF_ALT_C_OPTS="--preview 'tree -C {}"

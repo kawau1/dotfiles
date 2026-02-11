@@ -4,6 +4,9 @@
 
 ```
 dotfiles/
+├─ .conf/
+│  ├─ tmux.conf (~/.config/tmux/)
+│  └─ yt-dlp.conf (~/.config/yt-dlp/)
 ├─ .zsh/
 │  ├─ .p10k.zsh
 │  ├─ .zshrc
@@ -15,19 +18,18 @@ dotfiles/
 ├─ .vimrc
 ├─ brew_setup.sh
 ├─ install.sh
-├─ link.sh
-└─ yt-dlp.conf (~/.config/yt-dlp/)
+└─ link.sh
 ```
 
 ## インストール手順
 
-1. リポジトリをクローンする:
+1. リポジトリをクローン:
 
    ```bash
    git clone https://github.com/kawau1/dotfiles.git
    ```
 
-2. インストールスクリプトを実行する:
+2. インストールスクリプトを実行:
 
    ```bash
    cd ./dotfiles
@@ -36,7 +38,7 @@ dotfiles/
    ```
 
 ## メモ
-* 設定ファイルをWindowsで使用する場合、改行コードをCRLFに変換すること
+* 設定ファイルをWindowsで使用する場合、改行コードをCRLFに変換する
 
 ## リンク
 

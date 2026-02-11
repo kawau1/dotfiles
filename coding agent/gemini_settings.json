@@ -37,13 +37,14 @@
             "enabled": true
         },
         "previewFeatures": true,
-        "enablePromptCompletion": true
+        "enablePromptCompletion": true,
+        "vimMode": false
     },
     "ui": {
         "hideFooter": false,
         "showMemoryUsage": true,
         "showLineNumbers": true,
-        "theme": "Default",
+        "theme": "Default Light",
         "showStatusInTitle": true,
         "footer": {
             "hideContextPercentage": false
@@ -58,9 +59,16 @@
     "security": {
         "auth": {
             "selectedType": "oauth-personal"
+        },
+        "environmentVariableRedaction": {
+            "enabled": true
         }
     },
     "output": {
         "format": "text"
+    },
+    "experimental": {
+        "skills": true,
+        "plan": true
     }
 }

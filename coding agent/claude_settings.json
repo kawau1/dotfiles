@@ -1,0 +1,15 @@
+{
+    "env": {
+        "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+    },
+    "enabledPlugins": {
+        "code-review@claude-plugins-official": true,
+        "commit-commands@claude-plugins-official": true,
+        "code-simplifier@claude-plugins-official": true,
+        "frontend-design@claude-plugins-official": true,
+        "feature-dev@claude-plugins-official": true,
+        "github@claude-plugins-official": true
+    },
+    "language": "Japanese",
+    "fastMode": true
+}
