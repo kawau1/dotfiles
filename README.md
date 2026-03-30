@@ -4,6 +4,10 @@
 
 ```
 dotfiles/
+├─ .claude/
+│  ├─ CLAUDE.md
+│  ├─ settings.json
+│  └─ statusline.json
 ├─ .conf/
 │  ├─ tmux.conf (~/.config/tmux/)
 │  └─ yt-dlp.conf (~/.config/yt-dlp/)

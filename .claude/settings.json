@@ -3,7 +3,50 @@
         "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
     },
     "permissions": {
-        "defaultmode": "auto"
+        "defaultmode": "auto",
+        "allow": [
+            "Bash(npm run *)",
+            "Bash(npm test *)",
+            "Bash(npx prettier *)",
+            "Bash(npx eslint *)",
+            "Bash(git status)",
+            "Bash(git diff *)",
+            "Bash(git log *)"
+        ],
+        "ask": ["Bash(git commit *)", "Bash(git push *)", "Bash(curl *)"],
+        "deny": [
+            "Read(*.env)",
+            "Read(./.env.*)",
+            "Read(./secrets/**)",
+            "Read(./config/credentials.json)",
+            "Read(./build)",
+            "Read(id_rsa)",
+            "Read(id_ed25519)",
+            "Read(**/*token*)",
+            "Read(**/*key*)",
+            "Read(~/.ssh/**)",
+            "Read(~/.gnupg/**)",
+            "Read(~/.aws/**)",
+            "Read(~/.azure/**)",
+            "Read(~/.kube/**)",
+            "Read(~/.npmrc)",
+            "Read(~/.git-credentials)",
+            "Read(~/.config/gh/**)",
+            "Bash(sudo *)",
+            "Bash(rm -rf *)",
+            "Bash(git reset *)",
+            "Bash(git rebase *)",
+            "Bash(nc *)",
+            "Bash(ssh *)",
+            "Edit(**/secrets/**)",
+            "Edit(~/.bashrc)",
+            "Edit(~/.zshrc)"
+        ]
+    },
+    "sandbox": {
+        "filesystem": {
+            "denyRead": ["./.env", "./.env.*"]
+        }
     },
     "model": "opus",
     "statusLine": {
@@ -27,7 +70,6 @@
         "github@claude-plugins-official": true
     },
     "language": "Japanese",
-    "effortLevel": "high",
     "fastMode": true,
     "voiceEnabled": true
 }
