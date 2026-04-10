@@ -44,6 +44,25 @@ dotfiles/
 ## メモ
 * 設定ファイルをWindowsで使用する場合、改行コードをCRLFに変換する
 
+## Mac便利コマンド
+
+* マウス感度高速化
+```
+defaults write -g com.apple.mouse.scaling 10
+```
+
+* 隠しファイル表示永続化
+```
+defaults write com.apple.finder AppleShowAllFiles -boolean true; killall Finder
+```
+
+* sudo Touch ID化
+```
+sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
+sudo sh -c 'echo "auth sufficient pam_tid.so" > /etc/pam.d/sudo_local'
+```
+
+
 ## リンク
 
 * <https://brew.sh/ja/>

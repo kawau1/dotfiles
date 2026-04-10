@@ -3,7 +3,6 @@
         "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
     },
     "permissions": {
-        "defaultmode": "auto",
         "allow": [
             "Bash(npm run *)",
             "Bash(npm test *)",
@@ -13,7 +12,6 @@
             "Bash(git diff *)",
             "Bash(git log *)"
         ],
-        "ask": ["Bash(git commit *)", "Bash(git push *)", "Bash(curl *)"],
         "deny": [
             "Read(*.env)",
             "Read(./.env.*)",
@@ -41,12 +39,9 @@
             "Edit(**/secrets/**)",
             "Edit(~/.bashrc)",
             "Edit(~/.zshrc)"
-        ]
-    },
-    "sandbox": {
-        "filesystem": {
-            "denyRead": ["./.env", "./.env.*"]
-        }
+        ],
+        "ask": ["Bash(git commit *)", "Bash(git push *)", "Bash(curl *)"],
+        "defaultmode": "auto"
     },
     "model": "opus",
     "statusLine": {
@@ -67,9 +62,32 @@
         "security-guidance@claude-plugins-official": true,
         "claude-code-setup@claude-plugins-official": true,
         "playwright@claude-plugins-official": true,
-        "github@claude-plugins-official": true
+        "github@claude-plugins-official": true,
+        "codex@openai-codex": true,
+        "everything-claude-code@everything-claude-code": true
+    },
+    "extraKnownMarketplaces": {
+        "openai-codex": {
+            "source": {
+                "source": "github",
+                "repo": "openai/codex-plugin-cc"
+            },
+            "autoUpdate": true
+        },
+        "everything-claude-code": {
+            "source": {
+                "source": "github",
+                "repo": "affaan-m/everything-claude-code"
+            }
+        }
     },
     "language": "Japanese",
-    "fastMode": true,
-    "voiceEnabled": true
+    "sandbox": {
+        "filesystem": {
+            "denyRead": ["./.env", "./.env.*"]
+        }
+    },
+    "effortLevel": "high",
+    "voiceEnabled": true,
+    "autoDreamEnabled": true
 }
