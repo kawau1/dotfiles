@@ -28,17 +28,18 @@ dotfiles/
 
 | リポジトリ内 | 配置先 |
 |---|---|
-| `.vimrc` | `~/.vimrc` |
-| `.zsh/.zshrc` | `~/.zshrc` |
-| `.zsh/.p10k.zsh` | `~/.p10k.zsh` |
-| `.zsh/aliases.zsh` | `~/.oh-my-zsh/custom/aliases.zsh` |
-| `.conf/tmux.conf` | `~/.config/tmux/tmux.conf` |
-| `.conf/yt-dlp.conf` | `~/.config/yt-dlp/config` |
 | `.claude/CLAUDE.md` | `~/.claude/CLAUDE.md` |
 | `.claude/settings.json` | `~/.claude/settings.json` |
 | `.claude/statusline.py` | `~/.claude/statusline.py` |
+| `.conf/tmux.conf` | `~/.config/tmux/tmux.conf` |
+| `.conf/yt-dlp.conf` | `~/.config/yt-dlp/yt-dlp.conf` |
+| `.zsh/.zshrc` | `~/.zshrc` |
+| `.zsh/.p10k.zsh` | `~/.p10k.zsh` |
+| `.zsh/aliases.zsh` | `~/.oh-my-zsh/custom/aliases.zsh` |
 | `coding agent/config.toml` | `~/.codex/config.toml` |
 | `coding agent/settings.json` | `~/.gemini/settings.json` |
+| `coding agent/AGENTS.md` | `~/.codex/AGENTS.md`, `~/.gemini/AGENTS.md` |
+| `.vimrc` | `~/.vimrc` |
 
 ## インストール手順
 
@@ -52,8 +53,7 @@ dotfiles/
 
    ```bash
    cd ./dotfiles
-   chmod +x ./install.sh
-   sh ./install.sh
+   bash ./install.sh
    ```
 
 ## メモ
@@ -63,12 +63,13 @@ dotfiles/
 
 * マウス感度高速化
 ```
-defaults write -g com.apple.mouse.scaling 10
+defaults write -g com.apple.mouse.scaling 8
 ```
 
 * 隠しファイル表示永続化
 ```
-defaults write com.apple.finder AppleShowAllFiles -boolean true; killall Finder
+defaults write com.apple.finder AppleShowAllFiles -boolean true
+killall Finder
 ```
 
 * sudo Touch ID化

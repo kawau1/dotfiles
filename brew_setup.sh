@@ -13,11 +13,12 @@ brew install yt-dlp
 brew install imagemagick
 brew install bat
 brew install fzf
-brew install keifu
 brew install mactop
 brew install tree
 brew install tmux
 brew install uv
+brew install trasta298/tap/keifu
+
 # brew install ollama
 # brew services start ollama
 brew install codex
@@ -60,5 +61,6 @@ brew install --cask steam
 brew install --cask minecraft
 brew install --cask nvidia-geforce-now
 brew install --cask discord
-brew install --cask cmd-eikana
 brew install --cask logi-options+
+brew install --cask keycastr
+# https://github.com/dominion525/cmd-eikana から⌘英かなをインストール
