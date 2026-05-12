@@ -38,20 +38,28 @@
         },
         "previewFeatures": true,
         "enablePromptCompletion": true,
-        "vimMode": false
+        "vimMode": false,
+        "plan": {
+            "enabled": true
+        },
+        "enableNotifications": true
     },
     "ui": {
         "hideFooter": false,
         "showMemoryUsage": true,
         "showLineNumbers": true,
-        "theme": "Default Light",
+        "theme": "ANSI Light",
         "showStatusInTitle": true,
         "footer": {
             "hideContextPercentage": false
         },
         "showCitations": true,
         "showModelInfoInChat": true,
-        "useAlternateBuffer": true
+        "useAlternateBuffer": true,
+        "inlineThinkingMode": "full",
+        "escapePastedAtSymbols": true,
+        "terminalBuffer": true,
+        "loadingPhrases": "all"
     },
     "ide": {
         "enabled": true
@@ -62,13 +70,26 @@
         },
         "environmentVariableRedaction": {
             "enabled": true
-        }
+        },
+        "toolSandboxing": true,
+        "enablePermanentToolApproval": true,
+        "enableConseca": true
     },
     "output": {
         "format": "text"
     },
     "experimental": {
         "skills": true,
-        "plan": true
+        "worktrees": true,
+        "useOSC52Paste": false,
+        "useOSC52Copy": false,
+        "modelSteering": true,
+        "memoryManager": true,
+        "generalistProfile": true,
+        "contextManagement": true,
+        "topicUpdateNarration": true
+    },
+    "agents": {
+        "overrides": {}
     }
 }

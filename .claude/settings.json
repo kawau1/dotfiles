@@ -40,7 +40,7 @@
             "Edit(~/.bashrc)",
             "Edit(~/.zshrc)"
         ],
-        "ask": ["Bash(git commit *)", "Bash(git push *)", "Bash(curl *)"],
+        "ask": ["Bash(git commit *)", "Bash(git push *)"],
         "defaultmode": "auto"
     },
     "model": "opus",
@@ -78,7 +78,8 @@
             "source": {
                 "source": "github",
                 "repo": "affaan-m/everything-claude-code"
-            }
+            },
+            "autoUpdate": true
         }
     },
     "language": "Japanese",
@@ -87,7 +88,11 @@
             "denyRead": ["./.env", "./.env.*"]
         }
     },
-    "effortLevel": "high",
-    "voiceEnabled": true,
-    "autoDreamEnabled": true
+    "autoDreamEnabled": true,
+    "theme": "light",
+    "teammateMode": "auto",
+    "remoteControlAtStartup": true,
+    "inputNeededNotifEnabled": true,
+    "agentPushNotifEnabled": true,
+    "voiceEnabled": true
 }

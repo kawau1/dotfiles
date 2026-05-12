@@ -7,23 +7,38 @@ dotfiles/
 ├─ .claude/
 │  ├─ CLAUDE.md
 │  ├─ settings.json
-│  └─ statusline.json
+│  └─ statusline.py
 ├─ .conf/
-│  ├─ tmux.conf (~/.config/tmux/)
-│  └─ yt-dlp.conf (~/.config/yt-dlp/)
+│  ├─ tmux.conf
+│  └─ yt-dlp.conf
 ├─ .zsh/
 │  ├─ .p10k.zsh
 │  ├─ .zshrc
-│  └─ aliases.zsh (~/.oh-my-zsh/custom/)
+│  └─ aliases.zsh
 ├─ coding agent/
 │  ├─ AGENTS.md
-│  ├─ config.toml (~/.codex/)
-│  └─ settings.json (~/.gemini/)
+│  ├─ config.toml
+│  └─ settings.json
 ├─ .vimrc
 ├─ brew_setup.sh
 ├─ install.sh
 └─ link.sh
 ```
+## リンク先
+
+| リポジトリ内 | 配置先 |
+|---|---|
+| `.vimrc` | `~/.vimrc` |
+| `.zsh/.zshrc` | `~/.zshrc` |
+| `.zsh/.p10k.zsh` | `~/.p10k.zsh` |
+| `.zsh/aliases.zsh` | `~/.oh-my-zsh/custom/aliases.zsh` |
+| `.conf/tmux.conf` | `~/.config/tmux/tmux.conf` |
+| `.conf/yt-dlp.conf` | `~/.config/yt-dlp/config` |
+| `.claude/CLAUDE.md` | `~/.claude/CLAUDE.md` |
+| `.claude/settings.json` | `~/.claude/settings.json` |
+| `.claude/statusline.py` | `~/.claude/statusline.py` |
+| `coding agent/config.toml` | `~/.codex/config.toml` |
+| `coding agent/settings.json` | `~/.gemini/settings.json` |
 
 ## インストール手順
 

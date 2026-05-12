@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 brew update
 brew upgrade
@@ -18,8 +18,8 @@ brew install mactop
 brew install tree
 brew install tmux
 brew install uv
-brew install ollama
-brew services start ollama
+# brew install ollama
+# brew services start ollama
 brew install codex
 brew install gemini-cli
 brew install claude-code
@@ -33,7 +33,6 @@ brew install powerlevel10k
 brew install zsh-autocomplete
 brew install zsh-syntax-highlighting
 
-brew tap homebrew/cask-fonts
 brew install --cask font-monaspace
 brew install --cask font-monaspace-var
 brew install --cask font-monaspace-nf
@@ -57,7 +56,6 @@ brew install --cask deepl
 # brew install --cask microsoft-office
 brew install --cask visual-studio-code
 brew install --cask notion
-brew install --cask obsidian
 brew install --cask steam
 brew install --cask minecraft
 brew install --cask nvidia-geforce-now
