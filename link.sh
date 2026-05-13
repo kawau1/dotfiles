@@ -67,11 +67,12 @@ link_to_homedir() {
 	link_file "$dotdir/.zsh/.p10k.zsh" "$HOME/.p10k.zsh"
 	link_file "$dotdir/.zsh/aliases.zsh" "$HOME/.oh-my-zsh/custom/aliases.zsh"
 	link_file "$dotdir/.conf/tmux.conf" "$HOME/.config/tmux/tmux.conf"
-	link_file "$dotdir/.conf/yt-dlp.conf" "$HOME/.config/yt-dlp/config"
+	link_file "$dotdir/.conf/config" "$HOME/.config/yt-dlp/config"
 	link_file "$dotdir/.claude/CLAUDE.md" "$HOME/.claude/CLAUDE.md"
 	link_file "$dotdir/.claude/settings.json" "$HOME/.claude/settings.json"
 	link_file "$dotdir/.claude/statusline.py" "$HOME/.claude/statusline.py"
 	link_file "$dotdir/coding agent/AGENTS.md" "$HOME/.codex/AGENTS.md"
+	link_file "$dotdir/coding agent/AGENTS.md" "$HOME/.gemini/AGENTS.md"
 	link_file "$dotdir/coding agent/config.toml" "$HOME/.codex/config.toml"
 	link_file "$dotdir/coding agent/settings.json" "$HOME/.gemini/settings.json"
 }

@@ -20,7 +20,7 @@ set showtabline=2
 set wildmode=list:longest
 nnoremap j gj
 nnoremap k gk
-nnoremap <Esc><Esc> :nohsearch<CR><ESC>
+nnoremap <Esc><Esc> :nohlsearch<CR><Esc>
 nnoremap <C-a> ggVG
 nnoremap <C-c> "+y
 nnoremap <C-s> :w<CR>
