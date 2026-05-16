@@ -2,15 +2,16 @@ approval_policy = "on-request"
 approvals_reviewer = "auto_review"
 model = "gpt-5.5"
 model_reasoning_effort = "xhigh"
-notify = [
-    "/Users/yuichi/.codex/plugins/cache/openai-bundled/computer-use/1.0.770/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient",
-    "turn-ended",
-]
 personality = "pragmatic"
 sandbox_mode = "workspace-write"
 service_tier = "fast"
 suppress_unstable_features_warning = true
 oss_provider = "ollama"
+
+notify = ["/Users/yuichi/.codex/computer-use/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient", "turn-ended"]
+
+[sandbox_workspace_write]
+network_access = true
 
 [features]
 codex_git_commit = true
@@ -24,14 +25,14 @@ runtime_metrics = true
 terminal_resize_reflow = true
 
 [marketplaces.openai-bundled]
-last_updated = "2026-05-10T14:24:15Z"
+last_updated = "2026-05-15T15:10:04Z"
 source_type = "local"
 source = "/Users/yuichi/.codex/.tmp/bundled-marketplaces/openai-bundled"
 
 [marketplaces.openai-primary-runtime]
-last_updated = "2026-05-07T20:48:44Z"
-source = "/Users/yuichi/.cache/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime"
+last_updated = "2026-05-15T10:48:53Z"
 source_type = "local"
+source = "/Users/yuichi/.cache/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime"
 
 [mcp_servers.context7]
 args = [
@@ -83,9 +84,6 @@ enabled = true
 [plugins."google-drive@openai-curated"]
 enabled = true
 
-[plugins."latex-tectonic@openai-bundled"]
-enabled = true
-
 [plugins."life-science-research@openai-curated"]
 enabled = true
 
@@ -101,7 +99,10 @@ enabled = true
 [plugins."superpowers@openai-curated"]
 enabled = true
 
-[plugins."browser-use@openai-bundled"]
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[plugins."chrome@openai-bundled"]
 enabled = true
 
 [projects."/Users/yuichi"]
@@ -200,8 +201,20 @@ trust_level = "trusted"
 [projects."/Users/yuichi/Documents/Codex/2026-05-12/github-plugin-github-openai-curated-kawau1"]
 trust_level = "trusted"
 
-[sandbox_workspace_write]
-network_access = true
+[projects."/Users/yuichi/Documents/Codex/2026-05-12/github-plugin-github-openai-curated-kawau1-2"]
+trust_level = "trusted"
+
+[projects."/Users/yuichi/Documents/Codex/2026-05-12/new-chat"]
+trust_level = "trusted"
+
+[projects."/Users/yuichi/Documents/Codex/2026-05-15/plugin-computer-use-openai-bundled-mac"]
+trust_level = "trusted"
+
+[projects."/Users/yuichi/Documents/Codex/2026-05-15/config-toml"]
+trust_level = "trusted"
+
+[projects."/Users/yuichi/Documents/Codex/2026-05-16/goal-plugin-browser-openai-bundled-https"]
+trust_level = "trusted"
 
 [shell_environment_policy]
 inherit = "core"
@@ -210,6 +223,9 @@ inherit = "core"
 status_line = ["model-with-reasoning", "current-dir", "git-branch", "branch-changes", "run-state", "task-progress", "context-used", "five-hour-limit", "weekly-limit", "pull-request-number", "raw-output"]
 status_line_use_colors = true
 terminal_title = ["activity", "app-name", "thread-title", "project-name", "git-branch", "run-state", "task-progress"]
+notifications = true
+notification_condition = "unfocused"
+notification_method = "auto"
 
 [tui.model_availability_nux]
 "gpt-5.5" = 4
