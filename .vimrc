@@ -62,6 +62,45 @@ set shortmess-=S
 
 
 " Status Line
+" Git branch cache for statusline
+let s:git_branch_cache = {}
+let s:git_branch_cache_ttl = 5.0
+let s:git_branch_icon = nr2char(0xf418)
+
+function! StatuslineGitBranch() abort
+	let l:dir = expand('%:p:h')
+	if empty(l:dir)
+		let l:dir = getcwd()
+	endif
+
+	let l:key = fnamemodify(l:dir, ':p')
+	let l:now = reltimefloat(reltime())
+	if has_key(s:git_branch_cache, l:key)
+		let l:cached = s:git_branch_cache[l:key]
+		if l:now - l:cached.time < s:git_branch_cache_ttl
+			return l:cached.text
+		endif
+	endif
+
+	let l:branch = ''
+	if executable('git')
+		let l:git_cmd = 'git -C ' . shellescape(l:dir) . ' '
+		let l:lines = systemlist(l:git_cmd . 'symbolic-ref --quiet --short HEAD 2>/dev/null')
+		if v:shell_error == 0 && !empty(l:lines)
+			let l:branch = l:lines[0]
+		else
+			let l:lines = systemlist(l:git_cmd . 'rev-parse --short HEAD 2>/dev/null')
+			if v:shell_error == 0 && !empty(l:lines)
+				let l:branch = l:lines[0]
+			endif
+		endif
+	endif
+
+	let l:text = empty(l:branch) ? '' : s:git_branch_icon . substitute(l:branch, '%', '%%', 'g') . ' '
+	let s:git_branch_cache[l:key] = {'time': l:now, 'text': l:text}
+	return l:text
+endfunction
+
 " ステータスラインの色とモード名の設定
 function! StatuslineMode()
     if mode() == 'n'
@@ -88,7 +127,7 @@ function! StatuslineMode()
 endfunction
 
 " ステータスラインの設定
-set statusline=%#ModeNameHighlight#[%{StatuslineMode()}]%#StatusLine#\ %F%m%r%h%w\ %<%=行%l、列%c\ \ %{&fenc!=''?&fenc:&enc}\ \ %{&ff}\ \ %Y\
+set statusline=%#ModeNameHighlight#[%{StatuslineMode()}]%#StatusLine#\ %F%m%r%h%w\ \ %{StatuslineGitBranch()}%<%=行%l、列%c\ \ %{&fenc!=''?&fenc:&enc}\ \ %{&ff}\ \ %Y
 
 
 " Tab Line
@@ -143,6 +182,8 @@ Plug 'github/copilot.vim'
 Plug 'prettier/vim-prettier', {
 	\ 'do': 'yarn install --frozen-lockfile --production',
 	\ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
+Plug '/opt/homebrew/opt/fzf'
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 
