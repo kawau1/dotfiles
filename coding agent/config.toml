@@ -14,15 +14,12 @@ notify = ["/Users/yuichi/.codex/computer-use/Codex Computer Use.app/Contents/Sha
 network_access = true
 
 [features]
-codex_git_commit = true
 chronicle = false
-external_migration = true
 goals = true
 memories = true
 prevent_idle_sleep = true
 realtime_conversation = true
 runtime_metrics = true
-terminal_resize_reflow = true
 
 [marketplaces.openai-bundled]
 last_updated = "2026-05-15T15:10:04Z"
