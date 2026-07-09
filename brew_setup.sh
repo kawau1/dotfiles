@@ -47,7 +47,6 @@ brew install --cask iterm2
 brew install --cask sf-symbols
 brew install --cask chatgpt
 brew install --cask chatgpt-atlas
-brew install --cask codex-app
 brew install --cask docker
 brew install --cask parallels
 brew install --cask parallels-toolbox
