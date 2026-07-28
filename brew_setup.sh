@@ -4,7 +4,7 @@ brew update
 brew upgrade
 brew cleanup
 brew autoremove
-brew tap homebrew/autoupdate
+brew tap domt4/autoupdate
 brew autoupdate start 86400 --upgrade --cleanup --immediate --sudo
 
 brew install git
@@ -16,13 +16,13 @@ brew install fzf
 brew install mactop
 brew install tree
 brew install tmux
+brew install container
 brew install uv
 brew install trasta298/tap/keifu
 
 # brew install ollama
 # brew services start ollama
-brew install codex
-brew install gemini-cli
+brew install --cask codex
 brew install claude-code
 brew install neofetch
 brew install python
@@ -45,9 +45,10 @@ brew install --cask font-noto-sans-jp
 
 brew install --cask iterm2
 brew install --cask sf-symbols
+brew install --cask google-chrome
 brew install --cask chatgpt
-brew install --cask chatgpt-atlas
-brew install --cask docker
+brew install --cask claude
+brew install --cask docker-desktop
 brew install --cask parallels
 brew install --cask parallels-toolbox
 brew install --cask hhkb

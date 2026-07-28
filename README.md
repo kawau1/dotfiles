@@ -10,7 +10,7 @@ dotfiles/
 │  └─ statusline.py
 ├─ .conf/
 │  ├─ tmux.conf
-│  └─ yt-dlp.conf
+│  └─ config
 ├─ .zsh/
 │  ├─ .p10k.zsh
 │  ├─ .zshrc
@@ -32,7 +32,7 @@ dotfiles/
 | `.claude/settings.json` | `~/.claude/settings.json` |
 | `.claude/statusline.py` | `~/.claude/statusline.py` |
 | `.conf/tmux.conf` | `~/.config/tmux/tmux.conf` |
-| `.conf/yt-dlp.conf` | `~/.config/yt-dlp/yt-dlp.conf` |
+| `.conf/config` | `~/.config/yt-dlp/config` |
 | `.zsh/.zshrc` | `~/.zshrc` |
 | `.zsh/.p10k.zsh` | `~/.p10k.zsh` |
 | `.zsh/aliases.zsh` | `~/.oh-my-zsh/custom/aliases.zsh` |

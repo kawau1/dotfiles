@@ -1,98 +1,110 @@
 {
-    "env": {
-        "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(npm test *)",
+      "Bash(npx prettier *)",
+      "Bash(npx eslint *)",
+      "Bash(git status)",
+      "Bash(git diff *)",
+      "Bash(git log *)"
+    ],
+    "deny": [
+      "Read(*.env)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)",
+      "Read(./config/credentials.json)",
+      "Read(./build)",
+      "Read(id_rsa)",
+      "Read(id_ed25519)",
+      "Read(**/*token*)",
+      "Read(**/*key*)",
+      "Read(~/.ssh/**)",
+      "Read(~/.gnupg/**)",
+      "Read(~/.aws/**)",
+      "Read(~/.azure/**)",
+      "Read(~/.kube/**)",
+      "Read(~/.npmrc)",
+      "Read(~/.git-credentials)",
+      "Read(~/.config/gh/**)",
+      "Bash(sudo *)",
+      "Bash(rm -rf *)",
+      "Bash(git reset *)",
+      "Bash(git rebase *)",
+      "Bash(nc *)",
+      "Bash(ssh *)",
+      "Edit(**/secrets/**)",
+      "Edit(~/.bashrc)",
+      "Edit(~/.zshrc)"
+    ],
+    "ask": [
+      "Bash(git commit *)",
+      "Bash(git push *)"
+    ],
+    "defaultMode": "auto"
+  },
+  "enableWorkflows": true,
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline.py"
+  },
+  "enabledPlugins": {
+    "code-review@claude-plugins-official": true,
+    "commit-commands@claude-plugins-official": true,
+    "code-simplifier@claude-plugins-official": true,
+    "frontend-design@claude-plugins-official": true,
+    "feature-dev@claude-plugins-official": true,
+    "context7@claude-plugins-official": true,
+    "superpowers@claude-plugins-official": true,
+    "claude-md-management@claude-plugins-official": true,
+    "ralph-loop@claude-plugins-official": true,
+    "pr-review-toolkit@claude-plugins-official": true,
+    "security-guidance@claude-plugins-official": true,
+    "claude-code-setup@claude-plugins-official": true,
+    "playwright@claude-plugins-official": true,
+    "github@claude-plugins-official": true,
+    "codex@openai-codex": true,
+    "remember@claude-plugins-official": true,
+    "ecc@everything-claude-code": true
+  },
+  "extraKnownMarketplaces": {
+    "openai-codex": {
+      "source": {
+        "source": "github",
+        "repo": "openai/codex-plugin-cc"
+      },
+      "autoUpdate": true
     },
-    "permissions": {
-        "allow": [
-            "Bash(npm run *)",
-            "Bash(npm test *)",
-            "Bash(npx prettier *)",
-            "Bash(npx eslint *)",
-            "Bash(git status)",
-            "Bash(git diff *)",
-            "Bash(git log *)"
-        ],
-        "deny": [
-            "Read(*.env)",
-            "Read(./.env.*)",
-            "Read(./secrets/**)",
-            "Read(./config/credentials.json)",
-            "Read(./build)",
-            "Read(id_rsa)",
-            "Read(id_ed25519)",
-            "Read(**/*token*)",
-            "Read(**/*key*)",
-            "Read(~/.ssh/**)",
-            "Read(~/.gnupg/**)",
-            "Read(~/.aws/**)",
-            "Read(~/.azure/**)",
-            "Read(~/.kube/**)",
-            "Read(~/.npmrc)",
-            "Read(~/.git-credentials)",
-            "Read(~/.config/gh/**)",
-            "Bash(sudo *)",
-            "Bash(rm -rf *)",
-            "Bash(git reset *)",
-            "Bash(git rebase *)",
-            "Bash(nc *)",
-            "Bash(ssh *)",
-            "Edit(**/secrets/**)",
-            "Edit(~/.bashrc)",
-            "Edit(~/.zshrc)"
-        ],
-        "ask": ["Bash(git commit *)", "Bash(git push *)"],
-        "defaultmode": "auto"
-    },
-    "model": "opus",
-    "statusLine": {
-        "type": "command",
-        "command": "~/.claude/statusline.py"
-    },
-    "enabledPlugins": {
-        "code-review@claude-plugins-official": true,
-        "commit-commands@claude-plugins-official": true,
-        "code-simplifier@claude-plugins-official": true,
-        "frontend-design@claude-plugins-official": true,
-        "feature-dev@claude-plugins-official": true,
-        "context7@claude-plugins-official": true,
-        "superpowers@claude-plugins-official": true,
-        "claude-md-management@claude-plugins-official": true,
-        "ralph-loop@claude-plugins-official": true,
-        "pr-review-toolkit@claude-plugins-official": true,
-        "security-guidance@claude-plugins-official": true,
-        "claude-code-setup@claude-plugins-official": true,
-        "playwright@claude-plugins-official": true,
-        "github@claude-plugins-official": true,
-        "codex@openai-codex": true,
-        "everything-claude-code@everything-claude-code": true
-    },
-    "extraKnownMarketplaces": {
-        "openai-codex": {
-            "source": {
-                "source": "github",
-                "repo": "openai/codex-plugin-cc"
-            },
-            "autoUpdate": true
-        },
-        "everything-claude-code": {
-            "source": {
-                "source": "github",
-                "repo": "affaan-m/everything-claude-code"
-            },
-            "autoUpdate": true
-        }
-    },
-    "language": "Japanese",
-    "sandbox": {
-        "filesystem": {
-            "denyRead": ["./.env", "./.env.*"]
-        }
-    },
-    "autoDreamEnabled": true,
-    "theme": "light",
-    "teammateMode": "auto",
-    "remoteControlAtStartup": true,
-    "inputNeededNotifEnabled": true,
-    "agentPushNotifEnabled": true,
-    "voiceEnabled": true
+    "everything-claude-code": {
+      "source": {
+        "source": "github",
+        "repo": "affaan-m/everything-claude-code"
+      },
+      "autoUpdate": true
+    }
+  },
+  "language": "Japanese",
+  "sandbox": {
+    "filesystem": {
+      "denyRead": [
+        "./.env",
+        "./.env.*"
+      ]
+    }
+  },
+  "effortLevel": "xhigh",
+  "tui": "fullscreen",
+  "autoDreamEnabled": true,
+  "theme": "light",
+  "verbose": true,
+  "teammateMode": "auto",
+  "remoteControlAtStartup": true,
+  "inputNeededNotifEnabled": true,
+  "agentPushNotifEnabled": true,
+  "skipAutoPermissionPrompt": true,
+  "voiceEnabled": true,
+  "model": "claude-fable-5[1m]"
 }

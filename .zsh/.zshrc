@@ -73,6 +73,8 @@ setopt magic_equal_subst
 
 bindkey -v
 
+export CONTAINER_DEFAULT_PLATFORM=linux/arm64
+
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
 
@@ -193,3 +195,6 @@ ffprobe-yt() {
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS="--reverse --border --style=full --multi --preview 'fzf-preview.sh {}' --bind 'enter:execute-silent(printf '%s' {} | pbcopy)+accept'"
 export FZF_ALT_C_OPTS="--preview 'tree -C {}"
+
+eval "$(codex completion zsh)"
+export PATH="$HOME/.local/bin:$PATH"

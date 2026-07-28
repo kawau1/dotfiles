@@ -96,5 +96,4 @@ while [ $# -gt 0 ]; do
 done
 
 link_to_homedir
-git config --global include.path "$HOME/.gitconfig_shared"
 printf '\033[1mInstall completed!!!!\033[m\n'

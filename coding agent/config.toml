@@ -1,52 +1,33 @@
 approval_policy = "on-request"
 approvals_reviewer = "auto_review"
-model = "gpt-5.5"
-model_reasoning_effort = "xhigh"
+model = "gpt-5.6-sol"
+model_reasoning_effort = "max"
 personality = "pragmatic"
 sandbox_mode = "workspace-write"
-service_tier = "fast"
 suppress_unstable_features_warning = true
 oss_provider = "ollama"
 
-notify = ["/Users/yuichi/.codex/computer-use/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient", "turn-ended"]
+# プロジェクト履歴、デスクトップUI、通知履歴、端末固有の絶対パスなど、
+# Codexが自動生成するローカル状態はこのポータブル設定では管理しない。
 
 [sandbox_workspace_write]
 network_access = true
 
 [features]
-chronicle = false
-goals = true
 memories = true
 prevent_idle_sleep = true
 realtime_conversation = true
 runtime_metrics = true
 
-[marketplaces.openai-bundled]
-last_updated = "2026-05-15T15:10:04Z"
-source_type = "local"
-source = "/Users/yuichi/.codex/.tmp/bundled-marketplaces/openai-bundled"
-
-[marketplaces.openai-primary-runtime]
-last_updated = "2026-05-15T10:48:53Z"
-source_type = "local"
-source = "/Users/yuichi/.cache/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime"
-
-[mcp_servers.context7]
-args = [
-    "-y",
-    "@upstash/context7-mcp",
-]
-command = "npx"
+[marketplaces.context7-marketplace]
+source_type = "git"
+source = "https://github.com/upstash/context7.git"
 
 [mcp_servers.openaiDeveloperDocs]
 url = "https://developers.openai.com/mcp"
 
-[notice]
-fast_default_opt_out = true
-
-[notice.external_config_migration_prompts]
-home_last_prompted_at = 1778305280
-home = true
+[plugins."browser@openai-bundled"]
+enabled = true
 
 [plugins."build-ios-apps@openai-curated"]
 enabled = true
@@ -57,10 +38,19 @@ enabled = true
 [plugins."build-web-apps@openai-curated"]
 enabled = true
 
+[plugins."build-web-data-visualization@openai-curated"]
+enabled = true
+
+[plugins."chrome@openai-bundled"]
+enabled = true
+
 [plugins."codex-security@openai-curated"]
 enabled = true
 
 [plugins."computer-use@openai-bundled"]
+enabled = true
+
+[plugins."context7@context7-marketplace"]
 enabled = true
 
 [plugins."documents@openai-primary-runtime"]
@@ -81,13 +71,34 @@ enabled = true
 [plugins."google-drive@openai-curated"]
 enabled = true
 
+[plugins."latex@openai-bundled"]
+enabled = true
+
 [plugins."life-science-research@openai-curated"]
 enabled = true
 
 [plugins."notion@openai-curated"]
 enabled = true
 
+[plugins."openai-developers@openai-curated"]
+enabled = true
+
+[plugins."pdf@openai-primary-runtime"]
+enabled = true
+
 [plugins."presentations@openai-primary-runtime"]
+enabled = true
+
+[plugins."record-and-replay@openai-bundled"]
+enabled = true
+
+[plugins."remotion@openai-curated"]
+enabled = true
+
+[plugins."sites@openai-bundled"]
+enabled = true
+
+[plugins."slack@openai-curated"]
 enabled = true
 
 [plugins."spreadsheets@openai-primary-runtime"]
@@ -96,133 +107,20 @@ enabled = true
 [plugins."superpowers@openai-curated"]
 enabled = true
 
-[plugins."browser@openai-bundled"]
+[plugins."template-creator@openai-primary-runtime"]
 enabled = true
 
-[plugins."chrome@openai-bundled"]
+[plugins."visualize@openai-bundled"]
 enabled = true
-
-[projects."/Users/yuichi"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/Documents/Codex/2026-04-24/browser-use-browser-users-yuichi-codex"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/Documents/Codex/2026-04-24/latex-tectonic-plugin-latex-tectonic-openai"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/Documents/Codex/2026-04-25/config-toml"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/Documents/Codex/2026-04-29/spotify"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/Documents/Codex/2026-05-01/chatgpt-pro"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/Documents/Codex/2026-05-01/codex-security-plugin-codex-security-openai"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/Documents/Codex/2026-05-02/codex-skills"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/Documents/Codex/2026-05-02/mac-ssh-say-isight-postscript"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/Documents/Codex/2026-05-02/plugin-browser-use-openai-bundled-plugin"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/Documents/Codex/2026-05-03/approvals-reviewer-auto-review-guardian-subagent"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/Documents/Codex/2026-05-03/f"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/Documents/Codex/2026-05-04/codex-app-mac-gpu"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/Documents/Codex/2026-05-04/plugin-browser-use-openai-bundled-https"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/Documents/Codex/2026-05-06/files-mentioned-by-the-user-lil"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/Documents/Codex/2026-05-06/skill-installer-users-yuichi-codex-skills"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/Documents/Codex/2026-05-08/chatgpt-atlas-plugin-computer-use-openai"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/Documents/Codex/2026-05-08/chronicle"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/Documents/Codex/2026-05-08/new-chat"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/dev/3d-wifi-rader"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/dev/lego-studio"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/dev/material-website"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/dev/p5-website"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/sotsuken/source/Sotsuken2025"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/dev/yt-dlp-cli"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/dev/yt-dlp-gui"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/Documents/Codex/2026-05-09/npm"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/Documents/Codex/2026-05-10/github-codex"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/Documents/Codex/2026-05-10/codex-remote-control"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/Documents/Codex/2026-05-11/codex-oss-codex"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/Documents/Codex/2026-05-11/plugin-browser-use-openai-bundled-openai"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/Documents/Codex/2026-05-12/github-plugin-github-openai-curated-kawau1"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/Documents/Codex/2026-05-12/github-plugin-github-openai-curated-kawau1-2"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/Documents/Codex/2026-05-12/new-chat"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/Documents/Codex/2026-05-15/plugin-computer-use-openai-bundled-mac"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/Documents/Codex/2026-05-15/config-toml"]
-trust_level = "trusted"
-
-[projects."/Users/yuichi/Documents/Codex/2026-05-16/goal-plugin-browser-openai-bundled-https"]
-trust_level = "trusted"
 
 [shell_environment_policy]
 inherit = "core"
 
 [tui]
-status_line = ["model-with-reasoning", "current-dir", "git-branch", "branch-changes", "run-state", "task-progress", "context-used", "five-hour-limit", "weekly-limit", "pull-request-number", "raw-output"]
+status_line = ["model-with-reasoning", "current-dir", "git-branch", "branch-changes", "pull-request-number", "approval-mode", "run-state", "task-progress", "context-used", "five-hour-limit", "weekly-limit", "raw-output"]
 status_line_use_colors = true
-terminal_title = ["activity", "app-name", "thread-title", "project-name", "git-branch", "run-state", "task-progress"]
+terminal_title = ["activity", "app-name", "codex-version", "git-branch", "run-state", "task-progress"]
 notifications = true
 notification_condition = "unfocused"
 notification_method = "auto"
-
-[tui.model_availability_nux]
-"gpt-5.5" = 4
+pet = "disabled"
