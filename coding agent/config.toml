@@ -1,5 +1,5 @@
 approval_policy = "on-request"
-approvals_reviewer = "guardian_subagent"
+approvals_reviewer = "auto_review"
 model = "gpt-6-astra"
 model_reasoning_effort = "low"
 model_context_window = 872000
@@ -10,6 +10,9 @@ oss_provider = "ollama"
 
 # プロジェクト履歴、デスクトップUI、通知履歴、端末固有の絶対パスなど、
 # Codexが自動生成するローカル状態はこのポータブル設定では管理しない。
+
+[sandbox_workspace_write]
+network_access = true
 
 [features]
 memories = true
